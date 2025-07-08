@@ -34,6 +34,8 @@ builder.Services.AddScoped<IProfileRepository, MockProfileRepository>();
 builder.Services.AddScoped<IReferralRequestRepository, MockReferralRequestRepository>();
 builder.Services.AddScoped<IReferrerRepository, MockReferrerRepository>();
 builder.Services.AddScoped<IRequestRepository, MockRequestRepository>();
+builder.Services.AddScoped<IReferralCardRepository, MockReferralCardRepository>();
+builder.Services.AddScoped<IHomeService, HomeService>();
 
 var app = builder.Build();
 
